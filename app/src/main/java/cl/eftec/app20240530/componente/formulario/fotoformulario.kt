@@ -33,7 +33,7 @@ fun fotoformulario(fotoVista: FotoVista,fotoVistaModelo: FotoVistaModelo) {
             ElevatedButton(onClick = { fotoVistaModelo.agregarFotoalListado() }) {
                 Text("Agregar")
             }
-            ElevatedButton(onClick = { /*TODO*/ }) {
+            ElevatedButton(onClick = { fotoVistaModelo.navController!!.popBackStack() }) {
                 Text("Cancelar")
             }
         }

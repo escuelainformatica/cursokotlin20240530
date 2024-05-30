@@ -27,7 +27,7 @@ fun scaffold(fotovm: FotoVistaModelo) {
         topBar = {
             TopAppBar(
                 title = {
-                    Text("Top app bar")
+                    Text("Aplicacion Ejemplo")
                 }
             )
         },
@@ -57,8 +57,8 @@ fun scaffold(fotovm: FotoVistaModelo) {
                 .padding(innerPadding),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            fotolistado(fotoVistaModelo = fotovm)
-            fotoformulario(fotovm.foto,fotovm)
+            Navegacion(fotovm)
+
         }
     }
 }
