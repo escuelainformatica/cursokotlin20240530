@@ -30,7 +30,7 @@ fun fotoformulario(fotoVista: FotoVista,fotoVistaModelo: FotoVistaModelo) {
             value = if(fotoVista.id!=null) fotoVista.id?.toString()!! else "",
             onValueChange = {fotoVista.id= it.toInt()} )
         Row {
-            ElevatedButton(onClick = { fotoVistaModelo.agregarFotoalListado() }) {
+            ElevatedButton(onClick = { fotoVistaModelo.agregarFoto() }) {
                 Text("Agregar")
             }
             ElevatedButton(onClick = { fotoVistaModelo.navController!!.popBackStack() }) {

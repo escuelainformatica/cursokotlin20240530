@@ -34,6 +34,22 @@ class FotoVista() {
         albumId=null
         thumbnailUrl=null
     }
+    fun convertirAFoto():Foto {
+        var foto=Foto();
+        foto.albumId=albumId
+        foto.url=url
+        foto.id=id
+        foto.thumbnailUrl=thumbnailUrl
+        foto.title=title
+        return foto
+    }
+    fun asignarDesdeFoto(foto:Foto) {
+        albumId=foto.albumId
+        url=foto.url
+        id=foto.id
+        thumbnailUrl=foto.thumbnailUrl
+        title=foto.title
+    }
 
 }
 
