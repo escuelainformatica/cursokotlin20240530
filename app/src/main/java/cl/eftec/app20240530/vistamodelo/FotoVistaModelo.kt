@@ -1,5 +1,6 @@
 package cl.eftec.app20240530.vistamodelo
 
+import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.runtime.mutableStateListOf
 import androidx.navigation.NavHostController
@@ -49,7 +50,7 @@ class FotoVistaModelo {
         foto.borrarDatos()
         navController!!.popBackStack()
         scope!!.launch {
-            snackBar!!.showSnackbar("Agregado exitosamente")
+            snackBar!!.showSnackbar("Agregado exitosamente", withDismissAction = true, duration = SnackbarDuration.Indefinite)
         }
 
     }
